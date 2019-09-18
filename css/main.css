@@ -21,10 +21,12 @@ h1 {
 
 .NEON.bg_1 {
 	background-color: #222333 !important;
+
 }
 
 .NEON.fc_1 {
 	color: #ED1963 !important;
+  fill: #ED1963 !important;
 }
 .NEON.fc_2 {
 	color: #c13e9a !important;
