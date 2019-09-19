@@ -1,14 +1,29 @@
-h1 {
-	color: red;
+.jumbotron {
+  background-image: url(../assets/jumbotron.png);
+  background-size: cover;
+  height: 100vh;
+  text-align: right;
+  padding-right: 20px;
 }
 
+.fill {
+  min-height: 100%
+}
+
+.btn.BW {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  border-color: white;
+}
+
+.jumbotron > h1 {
+  font-family: Rockwell;
+}
 .BW.bg_1 {
 	background-color: black !important;
 }
 .BW.bg_2 {
 	background-color: white !important;
 }
-
 .BW.fc_1 {
 	color: white !important;
 }
@@ -18,12 +33,10 @@ h1 {
 .BW.fc_3 {
 	color: black !important;
 }
-
 .NEON.bg_1 {
 	background-color: #222333 !important;
 
 }
-
 .NEON.fc_1 {
 	color: #ED1963 !important;
   fill: #ED1963 !important;
