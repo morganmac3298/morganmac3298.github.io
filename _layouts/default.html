@@ -30,10 +30,10 @@
 	</head>
 
     <!-- Body = Main content for your site -->
-    <body>
+    <body class="BW bg_3">
 
         <!-- Header / Navbar stuff -->
-        <header>
+        <header class="BW bg_1">
         	<nav class="navbar navbar-expand-md navbar-dark BW bg_1">
                 <a href="#" class="navbar-brand BW bg_1 fc_1">Morgan McIntyre</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,8 +54,7 @@
                         <!-- COLOR SWITCHER -->
                         <li>
                             <label class="switch">
-                                <input type="checkbox" id="bwToggler" onclick="switchBW()">
-                                <span class="slider round"></span>
+                                <button class="btn BW fc_1" onclick="switchBW()">Colorize</button>
                             </label>
                         </li>
                     </ul>
@@ -66,45 +65,30 @@
 
 
         <!-- Jumbotron -->
-        <div id="jumbo" class="jumbotron jumbotron-fluid BW">
-          <h1 class="display-4 BW fc_1" style="padding-top:50px;">Hi there, I'm Morgan McIntyre</h1>
-          <p class="lead BW fc_1" >Take a look inside my portfolio</p>
+        <div id="jumbo" class="jumbotron jumbotron-fluid BW bg_3">
+          <h1 class="display-4 BW fc_5" style="padding-top:50px;">Hi there, I'm Morgan McIntyre</h1>
+          <p class="lead BW fc_3" >Take a look inside my portfolio</p>
           <p class="lead">
-            <a class="btn btn-primary btn-lg BW" href="#portfolio" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg BW fc_5" href="#portfolio" role="button">View Portfolio</a>
           </p>
         </div>
         <!-- End Jumbotron -->
 
 
-        <!-- About me -->
-        <div id="about" class="container fill">
-            
-
-
-            <p>Help</p>
-
-            {% for item in site.gallery %}
-                <p>{{ item.title }}</p>
-            {% endfor %}
-
-            <p style="color:blue;">Please</p>
-
-
-            {% for i in (1..5) %}
-                {% assign calc = var | modulo: 3 %}
-                {% if  calc == 0 %}
-                    <p>{{ var }} mod 3 = 0 </p>
-                {% else %}
-                    <p>{{ var }} didnt mod well</p>
-                {% endif %}
-                {% increment var %}
-            {% endfor %}
-
-            <p>Please</p>
-
-            {{ content }}
+        <!-- About Me -->
+        <div id="about" class="container-fluid fill bg-light BW bg_3">
+            <div class="d-flex flex-row flex-wrap">
+                <div class="col-sm" style="width:50%;">
+                    <h1 class="BW fc_1" style="padding-top: 30px;">About Me</h1>
+                    <p class="BW fc_4">"The most perfect person on the planet" - Everyone</p>
+                </div>
+                <div class="col-sm">
+                    <img src="assets/me.png" alt="Morgan" align="middle">
+                </div>
+                
+                
+            </div>
         </div>
-        <!-- End about me -->
 
 
         <!-- ALBUM -->
@@ -132,7 +116,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- END OF ROW 1 -->
 
                 <!-- ROW 2 -->
                 <div class="row">
@@ -159,8 +142,34 @@
 
             </div>
         </div>
-        <!-- END OF ALBUM -->
         
+
+        <!-- Contact -->
+        <div id="contact" class="container fill">
+            <p>Help</p>
+
+            {% for item in site.gallery %}
+                <p>{{ item.title }}</p>
+            {% endfor %}
+
+            <p style="color:blue;">Please</p>
+
+        
+            {% for i in (1..5) %}
+                {% assign calc = var | modulo: 3 %}
+                {% if  calc == 0 %}
+                    <p>{{ var }} mod 3 = 0 </p>
+                {% else %}
+                    <p>{{ var }} didnt mod well</p>
+                {% endif %}
+                {% increment var %}
+            {% endfor %}
+
+            <p>Please</p>
+
+            {{ content }}
+        </div>
+
 
         <!-- FOOTER -->
         <footer class="text-muted">
@@ -171,7 +180,6 @@
                 <p>Designed by Morgan McIntyre | Built by Keith E. Miller</p>
             </div>
         </footer>
-        <!-- END OF FOOTER -->
 
 
         <!-- Load scripts at the end-->

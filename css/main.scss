@@ -1,0 +1,101 @@
+---
+---
+img {
+  padding: 30px 10px 30px 10px;
+  width: 100%;
+}
+
+h1 {
+  font-family: Rockwell;
+}
+
+.jumbotron.BW{
+  background-image: url(../assets/jumbotron.png);
+  background-size: cover;
+  height: 100vh;
+  text-align: right;
+  padding-right: 20px;
+}
+.jumbotron.NEON{
+  background-image: url(../assets/jumbotron_color.png);
+  background-size: cover;
+  height: 100vh;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.fill {
+  min-height: 100%
+}
+
+.btn.BW {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  border-color: white;
+}
+.btn.NEON {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  border-color: #C9FFF8;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+}
+
+.fc_3{
+  font-family: 'Segoe UI';
+}
+
+.BW{
+  .bg_1 {
+	 background-color: white !important;
+   .navbar-brand{
+    font-family: Rockwell;
+   }
+  }
+  .bg_2 {
+    background-color: white !important;
+  }
+  .bg_3{
+    background-color: #F5F5F5 !important;
+  }
+  .fc_1 {
+    color: black !important;
+  }
+  .fc_2 {
+    color: #707070 !important;
+  }
+  .fc_3 {
+    color: white !important;
+  }
+  .fc_4 {
+    color: black !important;
+  }
+  .fc_5 {
+    color: white !important;
+  }
+}
+ 
+.NEON{
+  .bg_1 {
+	 background-color: #222333 !important;
+  }
+  .bg_3{
+    background-color: #222333 !important;
+  }
+  .fc_1 {
+    color: #ED1963 !important;
+    fill: #ED1963 !important;
+  }
+  .fc_2 {
+    color: #C9FFF8 !important;
+  }
+  .fc_3 {
+    color: white !important;
+  }
+  .fc_4 {
+    color: #C9FFF8 !important;
+  }
+  .fc_5 {
+    color: #C9FFF8 !important;
+  }
+}
