@@ -1,22 +1,17 @@
 /* Sets all checkboxes to unchecked */
-var checkboxes = document.getElementsByTagName('input');
-
-for (var i=0; i<checkboxes.length; i++)  {
-  if (checkboxes[i].type == 'checkbox')   {
-    checkboxes[i].checked = false;
-  }
-}
+//var checkboxes = document.getElementsByTagName('input');
+var colorized = false;
 
 /* Color changing switch */
 function switchBW() {
-	var checkBox = document.getElementById("bwToggler");
-
-	if (checkBox.checked){
+	//Check if the website is BW v NEON then switch classes
+	if (colorized == false){
 		var elements = document.getElementsByClassName("BW");
 		while (elements.length > 0){
 			elements[0].classList.toggle("NEON");
 			elements[0].classList.toggle("BW");
 		}
+		colorized = true;
 	}
 	else {
 		var elements = document.getElementsByClassName("NEON");
@@ -24,5 +19,6 @@ function switchBW() {
 			elements[0].classList.toggle("BW");
 			elements[0].classList.toggle("NEON");
 		}
+		colorized = false;
 	}
 }
