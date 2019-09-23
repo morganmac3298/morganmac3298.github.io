@@ -12,6 +12,8 @@ function switchBW() {
 			elements[0].classList.toggle("NEON");
 			elements[0].classList.toggle("BW");
 		}
+		var color_button = document.getElementById("color_button");
+		color_button.textContent = "Greyscale";
 		colorized = true;
 	}
 	else {
@@ -20,6 +22,8 @@ function switchBW() {
 			elements[0].classList.toggle("BW");
 			elements[0].classList.toggle("NEON");
 		}
+		var color_button = document.getElementById("color_button");
+		color_button.textContent = "Pastel";
 		colorized = false;
 	}
 }
@@ -30,5 +34,3 @@ function lock() {
 	screen.orientation.lock('landscape');
 	console.log("Changed orientation to landscape");	
 }
-
-lock()

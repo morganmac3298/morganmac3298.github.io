@@ -4,80 +4,55 @@
 		<title>Morgan's Site</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
         <!-- Loads stylesheet files from web and local -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
         
 	</head>
 
     <!-- Body = Main content for your site -->
-    <body class="BW bg_3">
-        <!-- Header / Navbar stuff -->
-        <header class="BW bg_1">
-        	<nav class="navbar navbar-expand-lg navbar-light BW bg_1">
-                <a href="#" class="navbar-brand BW bg_1 fc_1">Morgan McIntyre</a>
-                <button class="navbar-toggler BW" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse BW" id="navbarLinks">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link BW fc_2">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link BW fc_2">Porfolio</a>
-                        </li>
-                        <!-- Links go here -->
-                        <!-- COLOR SWITCHER -->
-                        <li>
-                            <label class="switch">
-                                <button id=color_button class="btn BW fc_animated" onclick="switchBW()">Pastel</button>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-        	</nav>
-		</header>
+    <body style="font-size: 1.5rem;">
+        {% include header.html %}
 
         <!-- Jumbotron -->
-        <div id="jumbo" class="jumbotron jumbotron-fluid BW bg_3">
-          <h1 class="display-4 BW fc_5" style="padding-top:50px;">Hi there, I'm Morgan McIntyre</h1>
-          <p class="lead BW fc_3" >Take a look inside my portfolio</p>
+        <div id="jumbo" class="jumbotron-fluid BW">
+          <h1 class="display-4 BW" style="padding-top:50px;">Hi there, I'm Morgan McIntyre</h1>
+          <p class="lead BW" >Take a look inside my portfolio</p>
           <p class="lead">
-            <a class="btn btn-primary btn-lg BW fc_5" href="#portfolio" role="button">View Portfolio</a>
+            <a id="view_portfolio" class="btn btn-primary btn-lg BW" href="#portfolio" role="button">View Portfolio</a>
           </p>
         </div>
 
         <!-- About Me -->
-        <div id="about" class="container-fluid fill bg-light BW bg_3">
+        <div id="about" class="container-fluid BW">
             <div class="d-flex flex-row flex-wrap">
-                <div class="col-sm" style="width:50%;">
-                    <h1 class="BW fc_1" style="padding-top: 30px;">About Me</h1>
-                    <p class="BW fc_4">Hi! My name is Morgan, I am a recent graduate of Middlesex Community College where I studied Graphic Design. When I started school, I was unsure of the direction I wanted to take, so I went with what I knew best and enrolled in a drawing class.</p>
-                    <p>Each time the class met, we would stand in a circle and critique the prior weeks assignment. During a routine critique, my Professor was talking about my piece when she walked over to me and asked, "Is this your field? Because I think this is your field." She was right, I knew I had to be an artist.</p>
-                    <p>Not long afterwards, I switched my major to Graphic Design. With the help of my experienced professors and creative classmates, my design skills improved tremendously during my two years at Middlesex.</p>
+                <div class="col-md" >
+                    <h1 class="BW">About Me</h1>
+                    <p class="BW">Hi! My name is Morgan, I am a recent graduate of Middlesex Community College where I studied Graphic Design. When I started school, I was unsure of the direction I wanted to take, so I went with what I knew best and enrolled in a drawing class.</p>
+                    <p class="BW">Each time the class met, we would stand in a circle and critique the prior weeks assignment. During a routine critique, my Professor was talking about my piece when she walked over to me and asked, "Is this your field? Because I think this is your field." She was right, I knew I had to be an artist.</p>
+                    <p class="BW">Not long afterwards, I switched my major to Graphic Design. With the help of my experienced professors and creative classmates, my design skills improved tremendously during my two years at Middlesex.</p>
                 </div>
-                <div class="col-sm">
-                    <img src="assets/me.png" alt="Morgan" align="middle">
+                <div class="col-md">
+                    <img src="assets/img/me.png" alt="Morgan" align="middle" style="height:100%; width:100%; object-fit: cover;  overflow:hidden; object-position: right top; min-width: 300;">
                 </div>
             </div>
         </div>
 
         <!-- ALBUM -->
-        <div id="portfolio" class="album py-5 bg-light BW bg_3">
+        <div id="portfolio" class="album BW">
             <div class="container-fluid">
-                <h1 class="BW fc_1" style="padding-top: 50px; padding-left: 15px; padding-right: 15px;">Portfolio</h1>
+                <h1 class="BW" style="padding-top: 50px; padding-left: 15px; padding-right: 15px;">Portfolio</h1>
                 {% for item in site.gallery %}
                     {% assign calc = forloop.index0 | modulo: 3 %}
                     {% if  calc == 0 %}
                         {% assign div_switch = true %}
-                        <div class="row" style="padding-bottom: 25px;">
+                        <div class="row" >
                     {% endif %}
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" style="padding-bottom: 50px;">
                         <div class="container mb-4" style="height:580px;">
-                            <img id={{ item.css_id }} src="assets/{{ item.picture }}" style="object-fit: cover; height:580px; width:100%;">
+                            <img id={{ item.css_id }} src="assets/img/{{ item.picture }}" style="object-fit: cover; height:580px; width:100%;">
                             <h2 class="card-text BW" align="center">{{ item.title }}</h2>
                             <a href="#"><span></span></a>
                         </div>
@@ -98,7 +73,7 @@
 
         <!-- FOOTER -->
         <footer class="text-muted">
-            <div class="container">
+            <div class="container-fluid">
                 <p class="float-right">
                     <a href="#">Back to top</a>
                 </p>
