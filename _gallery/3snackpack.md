@@ -1,4 +1,5 @@
 ---
 title: Snack Pack
-picture: snackpack.png
+css_id: snack
+picture: snackpack_new.png
 ---

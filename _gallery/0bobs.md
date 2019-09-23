@@ -1,4 +1,5 @@
 ---
 title: Bob's Electric Service
-picture: bob1.png
+css_id: bob
+picture: bob_new.png
 ---
