@@ -1,9 +1,15 @@
 ---
 ---
-img {
-  padding: 30px 10px 30px 10px;
-  width: 100%;
-}
+// Greyscale
+$white: white;
+$link_grey: #707070;
+$bg_offwhite: #F5F5F5;
+
+
+//Pastel
+$pink: #ED1963;
+$purple: #222333;
+$cyan: #C9FFF8;
 
 h1 {
   font-family: Rockwell;
@@ -15,77 +21,88 @@ h2 {
 
 .navbar-brand {
   font-size:1.755rem;
+  font-family: Rockwell;
 }
 
-.jumbotron.BW {
-  background-image: url(../assets/jumbotron.png);
-  background-size: cover;
-  height: 100vh;
-  text-align: right;
-  padding-right: 20px;
-}
-.jumbotron.NEON {
-  background-image: url(../assets/jumbotron_color.png);
-  background-size: cover;
-  height: 100vh;
-  text-align: right;
-  padding-right: 20px;
+header {
+  .BW {
+    background-color:$white;
+  }
+  .NEON {
+   background-color: $purple;
+  }
 }
 
-.fill {
-  min-height: 100%
+.fc_animated {
+    -webkit-animation:colorchange 5s infinite alternate;
 }
 
-.btn.BW {
+.btn {
   background-color: rgba(255, 0, 0, 0.0) !important;
-  border-color: white;
-}
-.btn.NEON {
-  background-color: rgba(255, 0, 0, 0.0) !important;
-  border-color: #C9FFF8;
+  font-size: 1.5rem;
 }
 
-.jumbotron {
+#jumbo {
   margin-bottom: 0rem;
+  padding-right: 20px;
+  background-size: cover;
+  height: 100vh;
+  text-align: right;
+} 
+
+.jumbotron-fluid.BW {
+  background-image: url("../img/jumbotron.png");
 }
 
-.fc_3{
-  font-family: 'Segoe UI';
+.jumbotron-fluid.NEON {
+  background-image: url("../img/jumbotron_color.png");
+}
+
+.container-fluid.BW {
+  color: black;
+  background-color: $bg_offwhite;
+}
+.container-fluid.NEON {
+  color: $cyan;
+  background-color: $purple;
+}
+
+.container-fluid {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .BW{
-  .bg_1 {
-	 background-color: white !important;
-   .navbar-brand{
-    font-family: Rockwell;
-   }
+  .navbar-brand {
+    color: black;
   }
-  .bg_2 {
-    background-color: white !important;
+  .nav-link {
+    color: $link_grey;
   }
-  .bg_3{
-    background-color: #F5F5F5 !important;
+  .display-4 {
+    color: $white;
   }
-  .fc_1 {
-    color: black !important;
+  .lead {
+    color: $white;
   }
-  .fc_2 {
-    color: #707070 !important;
+  #view_portfolio {
+    color: $white;
   }
-  .fc_3 {
-    color: white !important;
+  .container-fluid {
+      color: black;
+      background-color: $bg_offwhite;
   }
-  .fc_4 {
-    color: black !important;
+  #about {
+    background-color: $bg_offwhite;
   }
-  .fc_5 {
-    color: white !important;
+  h1 {
+    color: black;
   }
-  .fc_animated {
-    -webkit-animation:colorchange 5s infinite alternate;
-  }
+  .btn {
+    border-color: $white;
+  }  
   .navbar-toggler {
-    border-color: rgb(0,0,0);
+    border-color: black;
   }
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -95,35 +112,36 @@ h2 {
     border-color: black !important;
   }
 }
+
  
 .NEON{
-  .bg_1 {
-	 background-color: #222333 !important;
-   .navbar-brand{
-    font-family: Rockwell;
-   }
+  .navbar-brand {
+    color: $pink;
   }
-  .bg_3{
-    background-color: #222333 !important;
-  }
-  .fc_1 {
-    color: #ED1963 !important;
-    fill: #ED1963 !important;
-  }
-  .fc_2 {
-    color: #C9FFF8 !important;
-  }
-  .fc_3 {
-    color: white !important;
-  }
-  .fc_4 {
-    color: #C9FFF8 !important;
-  }
-  .fc_5 {
-    color: #C9FFF8 !important;
+  .nav-link {
+    color: $cyan;
   }
   .fc_animated{
     -webkit-animation:colorchange2 5s infinite alternate;
+  }
+  .display-4 {
+    color: $cyan;
+  }
+  .lead {
+    color: white;
+  }
+  #portfolio {
+    color: $cyan;
+  }
+  .container-fluid {
+    color: $cyan;
+    background-color: $purple;
+  }
+  h1 {
+    color: $pink;
+  }
+  .btn {
+    border-color: $cyan;
   }
   .navbar-toggler {
     border-color: #ED1963;
