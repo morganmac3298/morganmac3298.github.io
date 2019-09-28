@@ -3,12 +3,9 @@
 	<head>
 		<title>Morgan's Site</title>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
-
         <!-- Loads stylesheet files from web and local -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css"/>
         
 	</head>
 
@@ -55,7 +52,7 @@
                         <div class="container mb-4" style="height:580px;">
                             <img id={{ item.css_id }} src="assets/img/{{ item.picture }}" style="object-fit: cover; height:580px; width:100%;">
                             <h2 class="card-text BW" align="center">{{ item.title }}</h2>
-                            <a href="#"><span></span></a>
+                            <a href=".{{ item.url }}"><span></span></a>
                         </div>
                         
                     </div>
