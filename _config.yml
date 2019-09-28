@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
 
 collections:
-  gallery:
+  portfolio:
     output: true
 
 

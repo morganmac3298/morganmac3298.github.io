@@ -14,6 +14,7 @@
 
     <!-- Body = Main content for your site -->
     <body style="font-size: 1.5rem;">
+        <!-- Header -->
         {% include header.html %}
 
         <!-- Jumbotron -->
@@ -42,9 +43,9 @@
 
         <!-- ALBUM -->
         <div id="portfolio" class="album BW">
-            <div class="container-fluid">
+            <div class="container-fluid BW">
                 <h1 class="BW" style="padding-top: 50px; padding-left: 15px; padding-right: 15px;">Portfolio</h1>
-                {% for item in site.gallery %}
+                {% for item in site.portfolio %}
                     {% assign calc = forloop.index0 | modulo: 3 %}
                     {% if  calc == 0 %}
                         {% assign div_switch = true %}
@@ -70,25 +71,22 @@
             </div>
         </div>
 
+        <script>
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                console.log("mobile");
+            }
+            else{
+                console.log("desktop");
+            }
+        </script>
 
         <!-- FOOTER -->
-        <footer class="text-muted">
-            <div class="container-fluid">
-                <p class="float-right">
-                    <a href="#">Back to top</a>
-                </p>
-                <p>Designed by Morgan McIntyre | Built by Keith E. Miller</p>
-            </div>
-        </footer>
-
+        {% include footer.html %}
 
         <!-- Load scripts at the end-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="assets/js/my_scripts.js"></script>
-
-
     </body>
-
 </html>
