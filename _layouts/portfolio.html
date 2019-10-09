@@ -11,7 +11,11 @@
 
     <!-- Body = Main content for your site -->
     <body style="font-size: 1.5rem;">
-        {% include header.html %}
+        <nav class="navbar">
+            <a class="navbar-brand" href="javascript:history.back()">
+                <img src="../assets/img/back_arrow_grey.png" style="height:50px;">
+            </a>
+        </nav>
         <div class="container-fluid">
             <div class="d-flex flex-row flex-wrap">
                 <div class="col-md">
@@ -30,14 +34,6 @@
                             </div>
                             {% endfor %}
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
                 
@@ -53,9 +49,6 @@
                 console.log("desktop");
             }
         </script>
-
-        <!-- FOOTER -->
-        {% include footer.html %}
 
         <!-- Load scripts at the end-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
