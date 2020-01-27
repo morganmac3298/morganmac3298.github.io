@@ -5,5 +5,6 @@ css_id: twitch
 picture: offline_banner.png
 carousel_content:
   - profile_banner.png
+  - stream_overlay.png
 ---
 Poop
