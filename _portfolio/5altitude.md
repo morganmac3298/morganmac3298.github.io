@@ -11,9 +11,9 @@ carousel_content:
   - ATP_PriceBoard_OpenJump2.png
   - atp_stationery.png
   - atp_stationery2.png
-  - ATP_BirthdayCertificate20
-  - ATP_ConstantContact
-  - ATP_PartyBoards
+  - ATP_BirthdayCertificate20.png
+  - ATP_ConstantContact.png
+  - ATP_PartyBoards.png
 ---
 During my internship with Altitude Trampoline Park, I was tasked with updating documents that are used throughout the park. This included gift bag forms, business cards, party sheets, and monthly specials. Along with the business card, I completed a full stationery set with two letterheads. By supervisor was interested in having options for when she wanted something professional, or something that felt playful like the atmosphere inside the park.
 

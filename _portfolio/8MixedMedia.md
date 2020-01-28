@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: Mixed Media
-css_id: mixed media
+title: More
+css_id: more
 picture: PaintedGuitar1.png
 carousel_content:
   - PaintedGuitar2.png
