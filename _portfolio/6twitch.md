@@ -2,8 +2,9 @@
 layout: portfolio
 title: Twitch
 css_id: twitch
-picture: offline_banner.png
+picture: Twith_Thumb.png
 carousel_content:
+  - offline_banner.png
   - profile_banner.png
   - stream_overlay.png
 ---
