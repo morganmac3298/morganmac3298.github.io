@@ -15,10 +15,10 @@ carousel_content:
   - Ron2.png
 ---
 In order of appearance:
-"Baby Yoda" aka "The Child" Christmas card in colored pencil
-Oil pastel adaptation of "Still Life with a White Mug" by Chardin
-"I'm Breathing" album cover art done in charcoal
-A series of left hand drawings (I am right handed)
-United States map drawn on white canvas Vans
-Self portrait done in pencil
-Birthday card with a quote from Ron Swanson of Parks and Rec. colored pencil
+1. “Baby Yoda” aka “The Child” Christmas card in colored pencil
+2. Oil pastel adaptation of “Still Life with a White Mug” by Chardin
+3. “I’m Breathing” album cover art done in charcoal
+4. A series of left hand drawings (I am right handed)
+5. United States map drawn on white canvas Vans
+6. Self portrait done in pencil
+7. Birthday card with a quote from Ron Swanson of Parks and Rec. colored pencil
