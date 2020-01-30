@@ -2,7 +2,7 @@
 layout: portfolio
 title: White Rose
 css_id: rose
-picture: WR_Thumb.png
+thumbnail: WR_Thumb.png
 carousel_content:
   - wr_card1.png
   - wr_card2.png

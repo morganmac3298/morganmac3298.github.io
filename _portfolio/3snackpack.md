@@ -2,7 +2,7 @@
 layout: portfolio
 title: Snack Pack
 css_id: snack
-picture: SP_Thumb.png
+thumbnail: SP_Thumb.png
 carousel_content:
   - snackpack_new.png
   - snackpacks.png
