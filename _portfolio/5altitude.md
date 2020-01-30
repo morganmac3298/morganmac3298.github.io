@@ -2,7 +2,7 @@
 layout: portfolio
 title: Altitude Internship
 css_id: jump
-picture: ATP_Thumb.png
+thumbnail: ATP_Thumb.png
 carousel_content:
   - ATP_PriceBoard_OpenJump.png
   - ATP_JulySpecials2.png

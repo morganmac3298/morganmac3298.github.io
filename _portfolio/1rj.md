@@ -2,7 +2,7 @@
 layout: portfolio
 title: Romeo and Juliet Poster
 css_id: romeo
-picture: RJ_Thumb.png
+thumbnail: RJ_Thumb.png
 carousel_content:
   - rj_poster.png
 ---
