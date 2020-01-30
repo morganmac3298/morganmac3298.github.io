@@ -3,8 +3,8 @@ layout: portfolio
 title: Drawings
 css_id: Drawings
 thumbnail: Drawings_Thumb.png
+picture: BabyYoda.png
 carousel_content:
-  - BabyYoda.png
   - StillLife.png
   - Lungs2.png
   - Lungs3.png

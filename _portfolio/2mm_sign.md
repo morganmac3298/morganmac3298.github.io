@@ -3,8 +3,8 @@ layout: portfolio
 title: Matchstick Marvels
 css_id: match
 thumbnail: MM_Thumb.png
+picture: mm_signage.png
 carousel_content:
-  - mm_signage.png
   - mm_emailblast.png
   - mm_stationery.png
 ---

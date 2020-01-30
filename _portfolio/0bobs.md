@@ -3,8 +3,8 @@ layout: portfolio
 title: Bob's Electric Service
 css_id: bob
 thumbnail: Bobs_Thumb.png
+picture: bob_new.png
 carousel_content:
-  - bob_new.png
   - bob2.png
   - bob3.png
 ---

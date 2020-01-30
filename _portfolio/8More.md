@@ -3,8 +3,8 @@ layout: portfolio
 title: More
 css_id: more
 thumbnail: More_Thumb.png
+picture: PaintedGuitar1.png
 carousel_content:
-  - PaintedGuitar1.png
   - PaintedGuitar2.png
   - Rose.png
   - Record.png
