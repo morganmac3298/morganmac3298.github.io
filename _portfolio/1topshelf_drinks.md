@@ -3,11 +3,11 @@ layout: portfolio
 title: TopShelf Drinks
 css_id: drinks
 thumbnail: ts_drinks_thumb.jpg
-picture: ts_newdrink.png
+picture: ts_new_drink.png
 carousel_content:
-  - ts_newdrink_2.png
-  - ts_newdrink_3.png
-  - ts_newdrink_4.png
+  - ts_new_drink_2.png
+  - ts_new_drink_3.png
+  - ts_new_drink_4.png
   - ts_discover.png
   - ts_my_topshelf.png
   - ts_preview_glass.png

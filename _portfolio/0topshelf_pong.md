@@ -3,13 +3,13 @@ layout: portfolio
 title: TopShelf Pong
 css_id: pong
 thumbnail: ts_logo_thumb.png
-picture: ts_pong.png
+picture: ts_pong.PNG
 carousel_content:
-  - ts_pong_1.png
-  - ts_pong_2.png
-  - ts_pong_3.png
-  - ts_pong_4.png
-  - scoreboard.png
+  - ts_pong_1.PNG
+  - ts_pong_2.PNG
+  - ts_pong_3.PNG
+  - ts_pong_4.PNG
+  - Scoreboard.png
   - halloween.jpg
   - rules_poster.png
   - rerack_poster.png
