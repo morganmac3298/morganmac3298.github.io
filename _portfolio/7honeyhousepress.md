@@ -5,7 +5,7 @@ css_id: hhp
 thumbnail: logo.PNG
 picture: logo.PNG
 carousel_content:
-  - logo2.PNG
+  - logo2.jpg
   - logo3.PNG
   - pinkfloyd.PNG
 ---
