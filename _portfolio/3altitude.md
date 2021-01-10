@@ -8,6 +8,8 @@ carousel_content:
   - ATP_JulySpecials2.png
   - ATP_PartySheet3.png
   - tvs.png
+  - ATP_PriceBoard_OpenJump_New.png
+  - ATP_PriceBoard_BirthdayParties_New.png 
   - ATP_PriceBoard_BirthdayParties.png
   - ATP_PriceBoard_OpenJump2.png
   - atp_stationery.png
