@@ -16,6 +16,7 @@ carousel_content:
   - Jacket2.png
   - PopArt.png
   - VanGogh.png
+  - brady2.jpg
 ---
 In order of appearance:
 1. Commissioned art work, paint on acoustic guitar
@@ -29,3 +30,4 @@ In order of appearance:
 9. Paper airplane stitching, needle and thread on denim
 10. Pop Art makeup (but also some acrylic paint, oops)
 11. Tissue paper adaptation of Van Gogh
+12. My dog Brady on his pool float, watercolor pencil

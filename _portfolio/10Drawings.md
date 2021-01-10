@@ -15,7 +15,6 @@ carousel_content:
   - SelfPortrait.png
   - Ron2.png
   - brady.jpg
-  - brady2.jpg
   - chess.jpg
 ---
 In order of appearance:
@@ -27,5 +26,4 @@ In order of appearance:
 6. Self portrait done in pencil
 7. Birthday card with a quote from Ron Swanson of Parks and Rec. in colored pencil
 8. Colored pencil drawing of my dog Brady on his watermelon pool float
-9. Watercolor pencil drawing of Brady
-10. Chess board drawing done in pencil
+9. Chess board drawing done in pencil
